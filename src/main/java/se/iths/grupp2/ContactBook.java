@@ -69,10 +69,3 @@ public class ContactBook {
     }
 }
 
-enum QueryType {
-    NAME,
-    PHONENUMBER,
-    ADDRESS,
-    EMAIL,
-    WORK
-}

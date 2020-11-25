@@ -11,6 +11,7 @@ public class Main {
         contact2.setFavorite(true);
         contactBook.addContact(contact);
         contactBook.addContact(contact2);
+        contactBook.findContact(QueryType.ADDRESS, "Test");
         System.out.println(format());
     }
 
