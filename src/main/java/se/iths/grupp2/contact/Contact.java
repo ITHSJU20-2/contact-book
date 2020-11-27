@@ -8,13 +8,18 @@ public class Contact {
     private String phoneNumber;
     private String address;
     private String email;
-    private String work;
-    private List<String> notes;
-    private boolean favorite;
+    private String workPhone;
+    private String notes;
+    //private boolean favorite;
+    //Is this not to be added separately?
 
-    public Contact(String name, String phoneNumber) {
+    public Contact(String name, String phoneNumber, String address, String email, String workPhone, String notes) {
         this.name = name;
         this.phoneNumber = phoneNumber;
+        this.address = address;
+        this.email = email;
+        this.workPhone = workPhone;
+        this.notes = notes;
     }
 
     public String getName() {
@@ -50,18 +55,18 @@ public class Contact {
     }
 
     public String getWork() {
-        return work;
+        return workPhone;
     }
 
     public void setWork(String work) {
-        this.work = work;
+        this.workPhone = work;
     }
 
-    public List<String> getNotes() {
+    public String getNotes() {
         return notes;
     }
 
-    public void setNotes(List<String> notes) {
+    public void setNotes(String notes) {
         this.notes = notes;
     }
 
