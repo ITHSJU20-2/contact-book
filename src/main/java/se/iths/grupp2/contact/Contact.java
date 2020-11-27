@@ -1,7 +1,7 @@
 package se.iths.grupp2.contact;
 
 import java.util.List;
-
+    //Sean comment
 public class Contact {
 
     private String name;
