@@ -1,4 +1,4 @@
-package se.iths.grupp2;
+package se.iths.grupp2.contact;
 
 public enum QueryType {
     NAME,

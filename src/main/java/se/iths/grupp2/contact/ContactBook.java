@@ -1,4 +1,4 @@
-package se.iths.grupp2;
+package se.iths.grupp2.contact;
 
 import java.util.ArrayList;
 import java.util.List;
