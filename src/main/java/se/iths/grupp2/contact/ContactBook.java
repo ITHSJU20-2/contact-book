@@ -54,6 +54,31 @@ public class ContactBook {
         return null;
     }
 
+
+
+    //Marcus sök-kontakt metoder
+    public Contact contactName(String name) {
+        int position = findContact(name);
+        if(position>=0) {
+            return this.contactList.get(position);
+        }
+
+        return null;
+    }
+
+    private int findContact(String contactName) {
+        for(int i=0; i<this.contactList.size(); i++) {
+            Contact contact = this.contactList.get(i);
+            if(contact.getName().equals(contactName)) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+
+
     public List<Contact> getFavorites() {
         List<Contact> list = new ArrayList<>();
         for (Contact contact : contactList) {
